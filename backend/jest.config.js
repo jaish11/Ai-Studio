@@ -1,4 +1,19 @@
-export default {
+// export default {
+//   preset: "ts-jest/presets/default-esm",
+//   testEnvironment: "node",
+//   extensionsToTreatAsEsm: [".ts"],
+//   transform: {
+//     "^.+\\.ts$": ["ts-jest", { useESM: true }],
+//   },
+//   moduleNameMapper: {
+//     "^(\\.{1,2}/.*)\\.js$": "$1",
+//   },
+//   testPathIgnorePatterns: [
+//     "/node_modules/",
+//     "/dist/",
+//   ],
+// };
+module.exports = {
   preset: "ts-jest/presets/default-esm",
   testEnvironment: "node",
   extensionsToTreatAsEsm: [".ts"],
@@ -8,8 +23,5 @@ export default {
   moduleNameMapper: {
     "^(\\.{1,2}/.*)\\.js$": "$1",
   },
-  testPathIgnorePatterns: [
-    "/node_modules/",
-    "/dist/",
-  ],
+  testPathIgnorePatterns: ["/node_modules/", "/dist/"],
 };
